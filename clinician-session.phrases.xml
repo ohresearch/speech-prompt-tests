@@ -1,0 +1,20 @@
+<trials>
+<trial>
+<name>Trial 1</name>
+<pluggedNose>false</pluggedNose>
+<phrases>
+<phrase>Hello</phrase>
+<phrase>How are you?</phrase>
+<phrase>What's your name?</phrase>
+</phrases>
+</trial>
+<trial>
+<name>Trial 2</name>
+<pluggedNose>true</pluggedNose>
+<phrases>
+<phrase>Good morning</phrase>
+<phrase>How was your day?</phrase>
+<phrase>Where do you live?</phrase>
+</phrases>
+</trial>
+</trials>
