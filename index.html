@@ -56,5 +56,20 @@
     <li><a href="ospeech://start?xml=https://raw.githubusercontent.com/andreobvio/oSpeechXML/main/xml/clinician-session.phrases.xml">Deep link to open on iOS (full session session)</a></li>
     <li><a href="ospeech://start?xml=https://raw.githubusercontent.com/andreobvio/oSpeechXML/main/xml/multilingual-session.phrases.xml">Deep link to open on iOS (multilingual session test)</a></li>
   </ul>
+
+  <h2>Custom Deep Link:</h2>
+  <form id="customForm">
+    <label for="customXmlPath">Custom XML Path:</label>
+    <input type="text" id="customXmlPath" name="customXmlPath" placeholder="Enter XML path">
+    <button type="button" onclick="generateDeepLink()">Generate Deep Link</button>
+  </form>
+
+  <script>
+    function generateDeepLink() {
+      const customXmlPath = encodeURIComponent(document.getElementById('customXmlPath').value);
+      const deepLink = `ospeech://start?xml=${customXmlPath}`;
+      window.location.href = deepLink;
+    }
+  </script>
 </body>
 </html>
